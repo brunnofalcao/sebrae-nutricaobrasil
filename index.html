@@ -245,11 +245,11 @@ section{padding:100px 0}
 .footer-logos{display:flex;align-items:center;justify-content:center;gap:20px;margin-bottom:16px;flex-wrap:wrap}
 .footer-logos img{height:26px;opacity:.7;object-fit:contain}
 .footer-logos .sep{width:1px;height:22px;background:rgba(255,255,255,.15)}
-.footer-logos .sebrae-logo{height:auto;width:25%;max-width:280px;min-width:140px;opacity:.8}
+.footer-logos .sebrae-logo{height:auto;width:clamp(100px, 15%, 180px);opacity:.8}
 .footer-text{font-size:12px;color:rgba(255,255,255,.3);line-height:1.7}
 
 /* ── SEBRAE logo topbar ── */
-.topbar-logos .sebrae-logo{height:36px!important}
+.topbar-logos .sebrae-logo{height:42px!important}
 
 /* ── WHATSAPP BUTTONS ── */
 .btn-whatsapp{display:inline-flex;align-items:center;gap:8px;background:#25D366;color:#fff;font-weight:600;font-size:13px;padding:10px 22px;border-radius:100px;text-decoration:none;transition:all .3s;border:none}
@@ -554,16 +554,16 @@ section{padding:100px 0}
 <!-- FOOTER -->
 <footer class="footer">
   <div class="container">
-    <div style="margin-bottom:24px">
-      <p style="font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:rgba(255,255,255,.3);margin-bottom:12px">Apoio Institucional</p>
-      <img src="https://email-editor-production.s3.amazonaws.com/images/222578/Fotos%20Nutri%C3%A7%C3%A3o%20Brasil%20BSB/Logo%20Sebrae%20Branca.png" alt="SEBRAE/DF" class="sebrae-logo">
-    </div>
-    <div style="width:100%;height:1px;background:rgba(255,255,255,.06);margin-bottom:20px"></div>
     <div class="footer-logos">
       <img src="https://email-editor-production.s3.amazonaws.com/images/222578/nb_Logotipo_05.png" alt="Nutrição Brasil">
       <div class="sep"></div>
       <img src="https://email-editor-production.s3.amazonaws.com/images/222578/Science%20Play%20-%20Negativa.png" alt="Science Play">
     </div>
+    <div style="margin:20px 0;display:flex;align-items:center;justify-content:center;gap:12px">
+      <span style="font-size:10px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:rgba(255,255,255,.3)">Apoio Institucional</span>
+      <img src="https://email-editor-production.s3.amazonaws.com/images/222578/Fotos%20Nutri%C3%A7%C3%A3o%20Brasil%20BSB/Logo%20Sebrae%20Branca.png" alt="SEBRAE/DF" class="sebrae-logo">
+    </div>
+    <div style="width:60px;height:1px;background:rgba(255,255,255,.08);margin:0 auto 16px"></div>
     <p class="footer-text">Contrato nº CT260019 · Processo nº CD2600103<br>Nutrição Brasil 2026 — 27 a 29 de Agosto · Centro de Convenções Ulysses · Brasília/DF</p>
   </div>
 </footer>
