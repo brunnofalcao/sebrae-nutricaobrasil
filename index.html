@@ -170,6 +170,9 @@ section{padding:100px 0}
 .booth-card .area-unit{font-size:16px;color:var(--gray-400);font-weight:600}
 .booth-card .booth-dims{font-size:13px;color:var(--gray-600);margin-top:4px;font-weight:600}
 .booth-card .qty-badge{display:inline-block;margin-top:14px;background:rgba(46,204,113,.1);color:var(--green-success);font-size:12px;font-weight:700;padding:5px 14px;border-radius:100px}
+.booth-card .price{margin-top:14px;font-family:'Outfit',sans-serif;font-size:28px;font-weight:800;color:var(--blue-sebrae);line-height:1}
+.booth-card .price-note{font-size:11px;color:var(--gray-400);margin-top:2px;font-weight:500}
+.booth-card .price-original{font-size:13px;color:var(--gray-400);text-decoration:line-through;font-weight:500}
 .booth-card .includes{margin-top:18px;padding-top:18px;border-top:1px solid var(--gray-200);text-align:left}
 .booth-card .includes li{display:flex;align-items:center;gap:8px;font-size:12px;color:var(--gray-600);padding:3px 0;list-style:none}
 .booth-card .includes li::before{content:'✓';color:var(--green-success);font-weight:700;font-size:13px}
@@ -178,6 +181,18 @@ section{padding:100px 0}
 
 /* ── HOW ── */
 .how{background:var(--off-white)}
+/* RD Station form overrides */
+#expositor-sebrae-73b0789e208066a96641 input[type="text"],
+#expositor-sebrae-73b0789e208066a96641 input[type="email"],
+#expositor-sebrae-73b0789e208066a96641 input[type="tel"],
+#expositor-sebrae-73b0789e208066a96641 select,
+#expositor-sebrae-73b0789e208066a96641 textarea{font-family:'Plus Jakarta Sans',sans-serif!important;border-radius:10px!important;border:1.5px solid var(--gray-200)!important;padding:12px 16px!important;font-size:14px!important;transition:border-color .3s!important}
+#expositor-sebrae-73b0789e208066a96641 input:focus,
+#expositor-sebrae-73b0789e208066a96641 select:focus,
+#expositor-sebrae-73b0789e208066a96641 textarea:focus{border-color:var(--purple-brand)!important;outline:none!important;box-shadow:0 0 0 3px rgba(111,77,137,.1)!important}
+#expositor-sebrae-73b0789e208066a96641 button[type="submit"]{font-family:'Plus Jakarta Sans',sans-serif!important;background:linear-gradient(135deg,var(--blue-sebrae),#0080E0)!important;color:#fff!important;border:none!important;border-radius:100px!important;padding:14px 32px!important;font-size:15px!important;font-weight:700!important;cursor:pointer!important;transition:all .3s!important;box-shadow:0 4px 20px rgba(0,102,179,.3)!important;width:100%!important}
+#expositor-sebrae-73b0789e208066a96641 button[type="submit"]:hover{transform:translateY(-1px)!important;box-shadow:0 8px 28px rgba(0,102,179,.4)!important}
+#expositor-sebrae-73b0789e208066a96641 label{font-family:'Plus Jakarta Sans',sans-serif!important;font-size:13px!important;font-weight:600!important;color:var(--gray-600)!important;text-align:left!important}
 .how-steps{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-top:60px}
 .step{text-align:center;position:relative}
 .step-number{width:56px;height:56px;border-radius:50%;background:linear-gradient(135deg,var(--purple-brand),var(--purple-mid));color:#fff;font-family:'Outfit',sans-serif;font-size:24px;font-weight:800;display:flex;align-items:center;justify-content:center;margin:0 auto 16px}
@@ -249,9 +264,9 @@ section{padding:100px 0}
     <div class="topbar-logos">
       <img src="https://email-editor-production.s3.amazonaws.com/images/222578/nb_Logotipo_05.png" alt="Nutrição Brasil">
       <div class="sep"></div>
-      <img src="https://contato.sebraesp.com.br/wp-content/uploads/logo-sebrae-branco.png" alt="SEBRAE" style="height:22px;">
+      <img src="https://email-editor-production.s3.amazonaws.com/images/222578/Fotos%20Nutri%C3%A7%C3%A3o%20Brasil%20BSB/Logo%20Sebrae%20Branca.png" alt="SEBRAE" style="height:22px;">
     </div>
-    <a href="#inscricao" class="topbar-cta">Quero participar →</a>
+    <a href="#formulario" class="topbar-cta">Quero participar →</a>
   </div>
 </nav>
 
@@ -262,28 +277,28 @@ section{padding:100px 0}
       <div>
         <div class="hero-badge"><span class="dot"></span> Chamada Pública — Inscrições Abertas</div>
         <h1>Sua empresa no <span>maior evento de nutrição</span> do Brasil.<br>Com apoio <span class="accent-sebrae">SEBRAE/DF</span>.</h1>
-        <p class="hero-sub">O SEBRAE/DF disponibiliza até 20 estandes subsidiados para micro e pequenas empresas do Distrito Federal na exposição do Nutrição Brasil 2026 — Brasília.</p>
+        <p class="hero-sub">O SEBRAE/DF abre 20 vagas exclusivas para micro e pequenas empresas do Distrito Federal exporem no Nutrição Brasil 2026 — o maior congresso de nutrição do país. Estandes com montagem completa e condições especiais.</p>
         <div class="hero-stats">
           <div class="hero-stat"><div class="number">20</div><div class="label">ESTANDES DISPONÍVEIS</div></div>
           <div class="hero-stat"><div class="number">10k+</div><div class="label">VISITANTES ESPERADOS</div></div>
           <div class="hero-stat"><div class="number">3 dias</div><div class="label">DE EXPOSIÇÃO</div></div>
         </div>
         <div class="hero-actions">
-          <a href="#inscricao" class="btn-primary">Inscreva sua empresa →</a>
+          <a href="#formulario" class="btn-primary">Inscreva sua empresa →</a>
           <a href="#sobre" class="btn-secondary">Conhecer o evento</a>
         </div>
       </div>
       <div class="hero-visual">
         <div class="hero-card">
           <div class="hero-card-header">
-            <div class="hero-card-icon">📦</div>
-            <div><div class="hero-card-title">Estandes Subsidiados</div><div class="hero-card-subtitle">Custo zero para MPEs do DF selecionadas</div></div>
+            <div class="hero-card-icon">🎯</div>
+            <div><div class="hero-card-title">20 vagas para MPEs do DF</div><div class="hero-card-subtitle">Estandes com montagem completa · Apoio SEBRAE/DF</div></div>
           </div>
           <div class="booth-preview">
-            <div class="booth-row"><div class="booth-size">4m²</div><div class="booth-info"><div class="type">Estande Compacto</div><div class="qty">8 unidades</div></div><div class="booth-tag">DISPONÍVEL</div></div>
-            <div class="booth-row"><div class="booth-size">9m²</div><div class="booth-info"><div class="type">Estande Médio</div><div class="qty">6 unidades</div></div><div class="booth-tag">DISPONÍVEL</div></div>
-            <div class="booth-row"><div class="booth-size">12m²</div><div class="booth-info"><div class="type">Estande Amplo</div><div class="qty">4 unidades</div></div><div class="booth-tag">DISPONÍVEL</div></div>
-            <div class="booth-row"><div class="booth-size">18m²</div><div class="booth-info"><div class="type">Estande Premium</div><div class="qty">2 unidades</div></div><div class="booth-tag">LIMITADO</div></div>
+            <div class="booth-row"><div class="booth-size">4m²</div><div class="booth-info"><div class="type">Estande Compacto</div><div class="qty">8 unidades disponíveis</div></div><div class="booth-tag">DISPONÍVEL</div></div>
+            <div class="booth-row"><div class="booth-size">9m²</div><div class="booth-info"><div class="type">Estande Médio</div><div class="qty">6 unidades disponíveis</div></div><div class="booth-tag">DISPONÍVEL</div></div>
+            <div class="booth-row"><div class="booth-size">12m²</div><div class="booth-info"><div class="type">Estande Amplo</div><div class="qty">4 unidades disponíveis</div></div><div class="booth-tag">DISPONÍVEL</div></div>
+            <div class="booth-row"><div class="booth-size">18m²</div><div class="booth-info"><div class="type">Estande Premium</div><div class="qty">2 unidades disponíveis</div></div><div class="booth-tag">LIMITADO</div></div>
           </div>
         </div>
       </div>
@@ -295,23 +310,22 @@ section{padding:100px 0}
 <div class="marquee-section dark">
   <div class="marquee-label white">Edições anteriores do Nutrição Brasil</div>
   <div class="marquee-track scroll-left">
-    <!-- 8 slots + 8 duplicates for loop. Replace <div class="photo-placeholder">...</div> with <img src="URL" alt=""> -->
-    <div class="marquee-item"><div class="photo-placeholder"><span class="icon">📸</span>Congresso — Palco Principal</div></div>
-    <div class="marquee-item"><div class="photo-placeholder"><span class="icon">🏪</span>Expo — Estandes</div></div>
-    <div class="marquee-item"><div class="photo-placeholder"><span class="icon">👥</span>Networking</div></div>
-    <div class="marquee-item"><div class="photo-placeholder"><span class="icon">🎤</span>Arena Summit</div></div>
-    <div class="marquee-item"><div class="photo-placeholder"><span class="icon">🏃</span>NB Run</div></div>
-    <div class="marquee-item"><div class="photo-placeholder"><span class="icon">🏢</span>Ulysses — Fachada</div></div>
-    <div class="marquee-item"><div class="photo-placeholder"><span class="icon">🎁</span>Retirada de Kit</div></div>
-    <div class="marquee-item"><div class="photo-placeholder"><span class="icon">🏆</span>Dia do Nutricionista</div></div>
-    <div class="marquee-item"><div class="photo-placeholder"><span class="icon">📸</span>Congresso — Palco Principal</div></div>
-    <div class="marquee-item"><div class="photo-placeholder"><span class="icon">🏪</span>Expo — Estandes</div></div>
-    <div class="marquee-item"><div class="photo-placeholder"><span class="icon">👥</span>Networking</div></div>
-    <div class="marquee-item"><div class="photo-placeholder"><span class="icon">🎤</span>Arena Summit</div></div>
-    <div class="marquee-item"><div class="photo-placeholder"><span class="icon">🏃</span>NB Run</div></div>
-    <div class="marquee-item"><div class="photo-placeholder"><span class="icon">🏢</span>Ulysses — Fachada</div></div>
-    <div class="marquee-item"><div class="photo-placeholder"><span class="icon">🎁</span>Retirada de Kit</div></div>
-    <div class="marquee-item"><div class="photo-placeholder"><span class="icon">🏆</span>Dia do Nutricionista</div></div>
+    <div class="marquee-item"><img src="https://email-editor-production.s3.amazonaws.com/images/222578/Fotos%20Nutri%C3%A7%C3%A3o%20Brasil%20BSB/02082023_NutricaoBrasil-40.jpg" alt="Plenária Nutrição Brasil"><div class="overlay"><span>Plenária — Congresso</span></div></div>
+    <div class="marquee-item"><img src="https://email-editor-production.s3.amazonaws.com/images/222578/Fotos%20Nutri%C3%A7%C3%A3o%20Brasil%20BSB/02082023_NutricaoBrasil-98%20%281%29.jpg" alt="Nutrição Brasil"><div class="overlay"><span>Expo — Estandes</span></div></div>
+    <div class="marquee-item"><img src="https://email-editor-production.s3.amazonaws.com/images/222578/Fotos%20Nutri%C3%A7%C3%A3o%20Brasil%20BSB/02082023_NutricaoBrasil-47%20%281%29.jpg" alt="Nutrição Brasil"><div class="overlay"><span>Networking</span></div></div>
+    <div class="marquee-item"><img src="https://email-editor-production.s3.amazonaws.com/images/222578/Fotos%20Nutri%C3%A7%C3%A3o%20Brasil%20BSB/01082023_NutricaoBrasil-146%20%281%29.jpg" alt="Nutrição Brasil"><div class="overlay"><span>Bastidores</span></div></div>
+    <div class="marquee-item"><img src="https://email-editor-production.s3.amazonaws.com/images/222578/Fotos%20Nutri%C3%A7%C3%A3o%20Brasil%20BSB/Nutric%CC%A7a%CC%83o%20Brasil%203.jpg" alt="Nutrição Brasil"><div class="overlay"><span>Experiência NB</span></div></div>
+    <div class="marquee-item"><img src="https://email-editor-production.s3.amazonaws.com/images/222578/Fotos%20Nutri%C3%A7%C3%A3o%20Brasil%20BSB/Nutric%CC%A7a%CC%83o%20Brasil%206.jpg" alt="Nutrição Brasil"><div class="overlay"><span>Congresso</span></div></div>
+    <div class="marquee-item"><img src="https://email-editor-production.s3.amazonaws.com/images/222578/Fotos%20Nutri%C3%A7%C3%A3o%20Brasil%20BSB/Nutric%CC%A7a%CC%83o%20Brasil%207.jpg" alt="Nutrição Brasil"><div class="overlay"><span>Comunidade</span></div></div>
+    <div class="marquee-item"><img src="https://email-editor-production.s3.amazonaws.com/images/222578/Fotos%20Nutri%C3%A7%C3%A3o%20Brasil%20BSB/Nutric%CC%A7a%CC%83o%20Brasil%208.jpg" alt="Nutrição Brasil"><div class="overlay"><span>Ativações</span></div></div>
+    <div class="marquee-item"><img src="https://email-editor-production.s3.amazonaws.com/images/222578/Fotos%20Nutri%C3%A7%C3%A3o%20Brasil%20BSB/02082023_NutricaoBrasil-40.jpg" alt="Plenária Nutrição Brasil"><div class="overlay"><span>Plenária — Congresso</span></div></div>
+    <div class="marquee-item"><img src="https://email-editor-production.s3.amazonaws.com/images/222578/Fotos%20Nutri%C3%A7%C3%A3o%20Brasil%20BSB/02082023_NutricaoBrasil-98%20%281%29.jpg" alt="Nutrição Brasil"><div class="overlay"><span>Expo — Estandes</span></div></div>
+    <div class="marquee-item"><img src="https://email-editor-production.s3.amazonaws.com/images/222578/Fotos%20Nutri%C3%A7%C3%A3o%20Brasil%20BSB/02082023_NutricaoBrasil-47%20%281%29.jpg" alt="Nutrição Brasil"><div class="overlay"><span>Networking</span></div></div>
+    <div class="marquee-item"><img src="https://email-editor-production.s3.amazonaws.com/images/222578/Fotos%20Nutri%C3%A7%C3%A3o%20Brasil%20BSB/01082023_NutricaoBrasil-146%20%281%29.jpg" alt="Nutrição Brasil"><div class="overlay"><span>Bastidores</span></div></div>
+    <div class="marquee-item"><img src="https://email-editor-production.s3.amazonaws.com/images/222578/Fotos%20Nutri%C3%A7%C3%A3o%20Brasil%20BSB/Nutric%CC%A7a%CC%83o%20Brasil%203.jpg" alt="Nutrição Brasil"><div class="overlay"><span>Experiência NB</span></div></div>
+    <div class="marquee-item"><img src="https://email-editor-production.s3.amazonaws.com/images/222578/Fotos%20Nutri%C3%A7%C3%A3o%20Brasil%20BSB/Nutric%CC%A7a%CC%83o%20Brasil%206.jpg" alt="Nutrição Brasil"><div class="overlay"><span>Congresso</span></div></div>
+    <div class="marquee-item"><img src="https://email-editor-production.s3.amazonaws.com/images/222578/Fotos%20Nutri%C3%A7%C3%A3o%20Brasil%20BSB/Nutric%CC%A7a%CC%83o%20Brasil%207.jpg" alt="Nutrição Brasil"><div class="overlay"><span>Comunidade</span></div></div>
+    <div class="marquee-item"><img src="https://email-editor-production.s3.amazonaws.com/images/222578/Fotos%20Nutri%C3%A7%C3%A3o%20Brasil%20BSB/Nutric%CC%A7a%CC%83o%20Brasil%208.jpg" alt="Nutrição Brasil"><div class="overlay"><span>Ativações</span></div></div>
   </div>
 </div>
 
@@ -350,11 +364,11 @@ section{padding:100px 0}
     <div class="reveal" style="text-align:center">
       <div class="section-label" style="justify-content:center"><span class="line"></span> Por que participar <span class="line"></span></div>
       <h2 class="section-title">6 razões para sua empresa<br>estar no Nutrição Brasil.</h2>
-      <p class="section-desc" style="margin:0 auto">Exposição qualificada, público comprador e custo subsidiado pelo SEBRAE/DF.</p>
+      <p class="section-desc" style="margin:0 auto">Exposição qualificada, público comprador e apoio institucional do SEBRAE/DF.</p>
     </div>
     <div class="why-grid reveal rstag">
       <div class="why-card"><div class="why-icon purple">🎯</div><h3>Público ultra-qualificado</h3><p>82% mulheres, 69% atuam em clínica, 51% especialistas. Profissionais que prescrevem, indicam e compram para seus consultórios.</p></div>
-      <div class="why-card"><div class="why-icon blue">🏢</div><h3>Exposição com custo zero</h3><p>Estande completo subsidiado pelo SEBRAE/DF: carpete, parede, balcão, mesa, banquetas, iluminação LED e ponto de energia inclusos.</p></div>
+      <div class="why-card"><div class="why-icon blue">🏢</div><h3>Parceria SEBRAE/DF</h3><p>Programa exclusivo de apoio a micro e pequenas empresas do DF. O SEBRAE subsidia parte do investimento e você expõe ao lado das maiores marcas do setor com estande completo e montagem inclusa.</p></div>
       <div class="why-card"><div class="why-icon green">💰</div><h3>R$ 2.5M em negócios</h3><p>Estimativa de negócios gerados por edição. 3 dias de contato direto com compradores, prescritores e tomadores de decisão.</p></div>
       <div class="why-card"><div class="why-icon gold">🏅</div><h3>Autoridade por associação</h3><p>Sua marca ao lado de nomes como Nestlé Health Science, Nutrify, Puravida, Fagron, Ajinomoto e dezenas de líderes do setor.</p></div>
       <div class="why-card"><div class="why-icon cyan">📍</div><h3>Brasília é estratégica</h3><p>2º maior aeroporto do Brasil, maior renda per capita do país, +6.500 nutricionistas, +20 faculdades de nutrição na região.</p></div>
@@ -367,20 +381,20 @@ section{padding:100px 0}
 <div class="marquee-section light">
   <div class="marquee-label dark">Marcas e estandes em ação</div>
   <div class="marquee-track scroll-right">
-    <div class="marquee-item"><div class="photo-placeholder"><span class="icon">🧪</span>Estande — Suplementos</div></div>
-    <div class="marquee-item"><div class="photo-placeholder"><span class="icon">🥗</span>Estande — Alimentos</div></div>
-    <div class="marquee-item"><div class="photo-placeholder"><span class="icon">💊</span>Estande — Farmacêutico</div></div>
-    <div class="marquee-item"><div class="photo-placeholder"><span class="icon">📋</span>Credenciamento</div></div>
-    <div class="marquee-item"><div class="photo-placeholder"><span class="icon">🎪</span>Lounge de Marcas</div></div>
-    <div class="marquee-item"><div class="photo-placeholder"><span class="icon">🛍️</span>Entrega de Bags</div></div>
-    <div class="marquee-item"><div class="photo-placeholder"><span class="icon">🔬</span>Estande — Diagnóstico</div></div>
-    <div class="marquee-item"><div class="photo-placeholder"><span class="icon">🧪</span>Estande — Suplementos</div></div>
-    <div class="marquee-item"><div class="photo-placeholder"><span class="icon">🥗</span>Estande — Alimentos</div></div>
-    <div class="marquee-item"><div class="photo-placeholder"><span class="icon">💊</span>Estande — Farmacêutico</div></div>
-    <div class="marquee-item"><div class="photo-placeholder"><span class="icon">📋</span>Credenciamento</div></div>
-    <div class="marquee-item"><div class="photo-placeholder"><span class="icon">🎪</span>Lounge de Marcas</div></div>
-    <div class="marquee-item"><div class="photo-placeholder"><span class="icon">🛍️</span>Entrega de Bags</div></div>
-    <div class="marquee-item"><div class="photo-placeholder"><span class="icon">🔬</span>Estande — Diagnóstico</div></div>
+    <div class="marquee-item"><img src="https://email-editor-production.s3.amazonaws.com/images/222578/Fotos%20Nutri%C3%A7%C3%A3o%20Brasil%20BSB/01082023_NutricaoBrasil-54.jpg" alt="Nutrição Brasil"><div class="overlay"><span>Exposição</span></div></div>
+    <div class="marquee-item"><img src="https://email-editor-production.s3.amazonaws.com/images/222578/Fotos%20Nutri%C3%A7%C3%A3o%20Brasil%20BSB/Nutric%CC%A7a%CC%83o%20Brasil%2010.jpg" alt="Nutrição Brasil"><div class="overlay"><span>Marcas participantes</span></div></div>
+    <div class="marquee-item"><img src="https://email-editor-production.s3.amazonaws.com/images/222578/Fotos%20Nutri%C3%A7%C3%A3o%20Brasil%20BSB/02082023_NutricaoBrasil-98%20%281%29.jpg" alt="Nutrição Brasil"><div class="overlay"><span>Estandes em ação</span></div></div>
+    <div class="marquee-item"><img src="https://email-editor-production.s3.amazonaws.com/images/222578/Fotos%20Nutri%C3%A7%C3%A3o%20Brasil%20BSB/Nutric%CC%A7a%CC%83o%20Brasil%203.jpg" alt="Nutrição Brasil"><div class="overlay"><span>Público qualificado</span></div></div>
+    <div class="marquee-item"><img src="https://email-editor-production.s3.amazonaws.com/images/222578/Fotos%20Nutri%C3%A7%C3%A3o%20Brasil%20BSB/01082023_NutricaoBrasil-146%20%281%29.jpg" alt="Nutrição Brasil"><div class="overlay"><span>Conexões</span></div></div>
+    <div class="marquee-item"><img src="https://email-editor-production.s3.amazonaws.com/images/222578/Fotos%20Nutri%C3%A7%C3%A3o%20Brasil%20BSB/Nutric%CC%A7a%CC%83o%20Brasil%208.jpg" alt="Nutrição Brasil"><div class="overlay"><span>Ativações de marca</span></div></div>
+    <div class="marquee-item"><img src="https://email-editor-production.s3.amazonaws.com/images/222578/Fotos%20Nutri%C3%A7%C3%A3o%20Brasil%20BSB/Nutric%CC%A7a%CC%83o%20Brasil%206.jpg" alt="Nutrição Brasil"><div class="overlay"><span>Experiência presencial</span></div></div>
+    <div class="marquee-item"><img src="https://email-editor-production.s3.amazonaws.com/images/222578/Fotos%20Nutri%C3%A7%C3%A3o%20Brasil%20BSB/01082023_NutricaoBrasil-54.jpg" alt="Nutrição Brasil"><div class="overlay"><span>Exposição</span></div></div>
+    <div class="marquee-item"><img src="https://email-editor-production.s3.amazonaws.com/images/222578/Fotos%20Nutri%C3%A7%C3%A3o%20Brasil%20BSB/Nutric%CC%A7a%CC%83o%20Brasil%2010.jpg" alt="Nutrição Brasil"><div class="overlay"><span>Marcas participantes</span></div></div>
+    <div class="marquee-item"><img src="https://email-editor-production.s3.amazonaws.com/images/222578/Fotos%20Nutri%C3%A7%C3%A3o%20Brasil%20BSB/02082023_NutricaoBrasil-98%20%281%29.jpg" alt="Nutrição Brasil"><div class="overlay"><span>Estandes em ação</span></div></div>
+    <div class="marquee-item"><img src="https://email-editor-production.s3.amazonaws.com/images/222578/Fotos%20Nutri%C3%A7%C3%A3o%20Brasil%20BSB/Nutric%CC%A7a%CC%83o%20Brasil%203.jpg" alt="Nutrição Brasil"><div class="overlay"><span>Público qualificado</span></div></div>
+    <div class="marquee-item"><img src="https://email-editor-production.s3.amazonaws.com/images/222578/Fotos%20Nutri%C3%A7%C3%A3o%20Brasil%20BSB/01082023_NutricaoBrasil-146%20%281%29.jpg" alt="Nutrição Brasil"><div class="overlay"><span>Conexões</span></div></div>
+    <div class="marquee-item"><img src="https://email-editor-production.s3.amazonaws.com/images/222578/Fotos%20Nutri%C3%A7%C3%A3o%20Brasil%20BSB/Nutric%CC%A7a%CC%83o%20Brasil%208.jpg" alt="Nutrição Brasil"><div class="overlay"><span>Ativações de marca</span></div></div>
+    <div class="marquee-item"><img src="https://email-editor-production.s3.amazonaws.com/images/222578/Fotos%20Nutri%C3%A7%C3%A3o%20Brasil%20BSB/Nutric%CC%A7a%CC%83o%20Brasil%206.jpg" alt="Nutrição Brasil"><div class="overlay"><span>Experiência presencial</span></div></div>
   </div>
 </div>
 
@@ -412,18 +426,18 @@ section{padding:100px 0}
 <div class="marquee-section gradient">
   <div class="marquee-label white">A experiência completa</div>
   <div class="marquee-track scroll-left" style="animation-duration:35s">
-    <div class="marquee-item tall"><div class="photo-placeholder"><span class="icon">🏃‍♀️</span>NB Run — Largada</div></div>
-    <div class="marquee-item tall"><div class="photo-placeholder"><span class="icon">🥇</span>NB Run — Pódio</div></div>
-    <div class="marquee-item tall"><div class="photo-placeholder"><span class="icon">🎙️</span>Palco — Abertura</div></div>
-    <div class="marquee-item tall"><div class="photo-placeholder"><span class="icon">🤩</span>Plateia Lotada</div></div>
-    <div class="marquee-item tall"><div class="photo-placeholder"><span class="icon">📸</span>Bastidores</div></div>
-    <div class="marquee-item tall"><div class="photo-placeholder"><span class="icon">🎊</span>Encerramento</div></div>
-    <div class="marquee-item tall"><div class="photo-placeholder"><span class="icon">🏃‍♀️</span>NB Run — Largada</div></div>
-    <div class="marquee-item tall"><div class="photo-placeholder"><span class="icon">🥇</span>NB Run — Pódio</div></div>
-    <div class="marquee-item tall"><div class="photo-placeholder"><span class="icon">🎙️</span>Palco — Abertura</div></div>
-    <div class="marquee-item tall"><div class="photo-placeholder"><span class="icon">🤩</span>Plateia Lotada</div></div>
-    <div class="marquee-item tall"><div class="photo-placeholder"><span class="icon">📸</span>Bastidores</div></div>
-    <div class="marquee-item tall"><div class="photo-placeholder"><span class="icon">🎊</span>Encerramento</div></div>
+    <div class="marquee-item tall"><img src="https://email-editor-production.s3.amazonaws.com/images/222578/Fotos%20Nutri%C3%A7%C3%A3o%20Brasil%20BSB/02082023_NutricaoBrasil-40.jpg" alt="Plenária"><div class="overlay"><span>Plenária lotada</span></div></div>
+    <div class="marquee-item tall"><img src="https://email-editor-production.s3.amazonaws.com/images/222578/Fotos%20Nutri%C3%A7%C3%A3o%20Brasil%20BSB/02082023_NutricaoBrasil-47%20%281%29.jpg" alt="Nutrição Brasil"><div class="overlay"><span>Palco principal</span></div></div>
+    <div class="marquee-item tall"><img src="https://email-editor-production.s3.amazonaws.com/images/222578/Fotos%20Nutri%C3%A7%C3%A3o%20Brasil%20BSB/Nutric%CC%A7a%CC%83o%20Brasil%207.jpg" alt="Nutrição Brasil"><div class="overlay"><span>Comunidade NB</span></div></div>
+    <div class="marquee-item tall"><img src="https://email-editor-production.s3.amazonaws.com/images/222578/Fotos%20Nutri%C3%A7%C3%A3o%20Brasil%20BSB/Nutric%CC%A7a%CC%83o%20Brasil%2010.jpg" alt="Nutrição Brasil"><div class="overlay"><span>Expo em movimento</span></div></div>
+    <div class="marquee-item tall"><img src="https://email-editor-production.s3.amazonaws.com/images/222578/Fotos%20Nutri%C3%A7%C3%A3o%20Brasil%20BSB/01082023_NutricaoBrasil-54.jpg" alt="Nutrição Brasil"><div class="overlay"><span>Encontro nacional</span></div></div>
+    <div class="marquee-item tall"><img src="https://email-editor-production.s3.amazonaws.com/images/222578/Fotos%20Nutri%C3%A7%C3%A3o%20Brasil%20BSB/Nutric%CC%A7a%CC%83o%20Brasil%203.jpg" alt="Nutrição Brasil"><div class="overlay"><span>Experiência completa</span></div></div>
+    <div class="marquee-item tall"><img src="https://email-editor-production.s3.amazonaws.com/images/222578/Fotos%20Nutri%C3%A7%C3%A3o%20Brasil%20BSB/02082023_NutricaoBrasil-40.jpg" alt="Plenária"><div class="overlay"><span>Plenária lotada</span></div></div>
+    <div class="marquee-item tall"><img src="https://email-editor-production.s3.amazonaws.com/images/222578/Fotos%20Nutri%C3%A7%C3%A3o%20Brasil%20BSB/02082023_NutricaoBrasil-47%20%281%29.jpg" alt="Nutrição Brasil"><div class="overlay"><span>Palco principal</span></div></div>
+    <div class="marquee-item tall"><img src="https://email-editor-production.s3.amazonaws.com/images/222578/Fotos%20Nutri%C3%A7%C3%A3o%20Brasil%20BSB/Nutric%CC%A7a%CC%83o%20Brasil%207.jpg" alt="Nutrição Brasil"><div class="overlay"><span>Comunidade NB</span></div></div>
+    <div class="marquee-item tall"><img src="https://email-editor-production.s3.amazonaws.com/images/222578/Fotos%20Nutri%C3%A7%C3%A3o%20Brasil%20BSB/Nutric%CC%A7a%CC%83o%20Brasil%2010.jpg" alt="Nutrição Brasil"><div class="overlay"><span>Expo em movimento</span></div></div>
+    <div class="marquee-item tall"><img src="https://email-editor-production.s3.amazonaws.com/images/222578/Fotos%20Nutri%C3%A7%C3%A3o%20Brasil%20BSB/01082023_NutricaoBrasil-54.jpg" alt="Nutrição Brasil"><div class="overlay"><span>Encontro nacional</span></div></div>
+    <div class="marquee-item tall"><img src="https://email-editor-production.s3.amazonaws.com/images/222578/Fotos%20Nutri%C3%A7%C3%A3o%20Brasil%20BSB/Nutric%CC%A7a%CC%83o%20Brasil%203.jpg" alt="Nutrição Brasil"><div class="overlay"><span>Experiência completa</span></div></div>
   </div>
 </div>
 
@@ -432,14 +446,14 @@ section{padding:100px 0}
   <div class="container">
     <div class="reveal">
       <div class="section-label"><span class="line"></span> Estandes Disponíveis</div>
-      <h2 class="section-title">Escolha o tamanho ideal<br>para sua operação.</h2>
-      <p class="section-desc">Todos incluem montagem básica completa. Sem custo para a empresa selecionada.</p>
+      <h2 class="section-title">Investimento com 50% de<br>subsídio SEBRAE/DF.</h2>
+      <p class="section-desc">Valores abaixo já com o desconto do programa de apoio. Montagem básica completa inclusa em todos os tamanhos. Pagamento direto ao SEBRAE/DF.</p>
     </div>
     <div class="booths-grid reveal rstag">
-      <div class="booth-card"><div class="area">4<span class="area-unit">m²</span></div><div class="booth-dims">2 × 2 metros</div><div class="qty-badge">8 vagas</div><ul class="includes"><li>Carpete grafite</li><li>Parede modular 2,20m</li><li>Balcão 1 × 1m</li><li>Mesa bistrô</li><li>3 banquetas</li><li>Iluminação LED</li><li>Tomada 220V</li></ul></div>
-      <div class="booth-card featured"><div class="area">9<span class="area-unit">m²</span></div><div class="booth-dims">3 × 3 metros</div><div class="qty-badge">6 vagas</div><ul class="includes"><li>Carpete grafite</li><li>Parede modular 2,20m</li><li>Balcão 1 × 1m</li><li>Mesa bistrô</li><li>3 banquetas</li><li>Iluminação LED</li><li>Tomada 220V</li></ul></div>
-      <div class="booth-card"><div class="area">12<span class="area-unit">m²</span></div><div class="booth-dims">3 × 4 metros</div><div class="qty-badge">4 vagas</div><ul class="includes"><li>Carpete grafite</li><li>Parede modular 2,20m</li><li>Balcão 1 × 1m</li><li>Mesa bistrô</li><li>3 banquetas</li><li>Iluminação LED</li><li>Tomada 220V</li></ul></div>
-      <div class="booth-card"><div class="area">18<span class="area-unit">m²</span></div><div class="booth-dims">3 × 6 metros</div><div class="qty-badge">2 vagas</div><ul class="includes"><li>Carpete grafite</li><li>Parede modular 2,20m</li><li>Balcão 1 × 1m</li><li>Mesa bistrô</li><li>3 banquetas</li><li>Iluminação LED</li><li>Tomada 220V</li></ul></div>
+      <div class="booth-card"><div class="area">4<span class="area-unit">m²</span></div><div class="booth-dims">2 × 2 metros</div><div class="qty-badge">8 vagas</div><div class="price-original">R$ 4.000</div><div class="price">R$ 2.000</div><div class="price-note">com subsídio SEBRAE/DF</div><ul class="includes"><li>Carpete grafite</li><li>Parede modular 2,20m</li><li>Balcão 1 × 1m</li><li>Mesa bistrô</li><li>3 banquetas</li><li>Iluminação LED</li><li>Tomada 220V</li></ul></div>
+      <div class="booth-card featured"><div class="area">9<span class="area-unit">m²</span></div><div class="booth-dims">3 × 3 metros</div><div class="qty-badge">6 vagas</div><div class="price-original">R$ 9.000</div><div class="price">R$ 4.500</div><div class="price-note">com subsídio SEBRAE/DF</div><ul class="includes"><li>Carpete grafite</li><li>Parede modular 2,20m</li><li>Balcão 1 × 1m</li><li>Mesa bistrô</li><li>3 banquetas</li><li>Iluminação LED</li><li>Tomada 220V</li></ul></div>
+      <div class="booth-card"><div class="area">12<span class="area-unit">m²</span></div><div class="booth-dims">3 × 4 metros</div><div class="qty-badge">4 vagas</div><div class="price-original">R$ 12.000</div><div class="price">R$ 6.000</div><div class="price-note">com subsídio SEBRAE/DF</div><ul class="includes"><li>Carpete grafite</li><li>Parede modular 2,20m</li><li>Balcão 1 × 1m</li><li>Mesa bistrô</li><li>3 banquetas</li><li>Iluminação LED</li><li>Tomada 220V</li></ul></div>
+      <div class="booth-card"><div class="area">18<span class="area-unit">m²</span></div><div class="booth-dims">3 × 6 metros</div><div class="qty-badge">2 vagas</div><div class="price-original">R$ 18.000</div><div class="price">R$ 9.000</div><div class="price-note">com subsídio SEBRAE/DF</div><ul class="includes"><li>Carpete grafite</li><li>Parede modular 2,20m</li><li>Balcão 1 × 1m</li><li>Mesa bistrô</li><li>3 banquetas</li><li>Iluminação LED</li><li>Tomada 220V</li></ul></div>
     </div>
     <div class="booth-note reveal"><strong>Importante:</strong> A montagem é no formato básico (octanorm). Personalização visual — adesivos, banners, materiais promocionais — é de responsabilidade da empresa selecionada. Estrutura adicional pode ser solicitada por conta do expositor.</div>
   </div>
@@ -459,9 +473,15 @@ section{padding:100px 0}
       <div class="step"><div class="step-number">3</div><div class="step-connector"></div><h3>Seleção</h3><p>Empresas selecionadas recebem a confirmação do estande, tamanho e localização.</p></div>
       <div class="step"><div class="step-number">4</div><div class="step-connector"></div><h3>Preparação</h3><p>Monte sua comunicação visual e prepare sua operação para os 3 dias de exposição.</p></div>
     </div>
-    <div style="text-align:center;margin-top:60px" class="reveal">
-      <a href="mailto:yasmin@scienceplay.com?subject=Interesse%20-%20Estande%20SEBRAE%20NB2026" class="btn-primary" style="font-size:17px;padding:18px 44px">Manifestar interesse →</a>
-      <p style="margin-top:16px;font-size:14px;color:var(--gray-400)">Contato: <strong style="color:var(--purple-brand)">yasmin@scienceplay.com</strong> · <strong style="color:var(--purple-brand)">+55 61 99450-2691</strong></p>
+    <div style="max-width:600px;margin:60px auto 0" class="reveal" id="formulario">
+      <div style="background:var(--white);border:2px solid var(--gray-200);border-radius:var(--radius-lg);padding:36px 32px;text-align:center">
+        <h3 style="font-family:'Outfit',sans-serif;font-size:22px;font-weight:800;color:var(--purple-deep);margin-bottom:4px">Manifeste seu interesse</h3>
+        <p style="font-size:13px;color:var(--gray-400);margin-bottom:24px">Preencha os dados abaixo. O SEBRAE/DF entrará em contato com as empresas selecionadas.</p>
+        <div role="main" id="expositor-sebrae-73b0789e208066a96641"></div>
+        <script type="text/javascript" src="https://d335luupugsy2.cloudfront.net/js/rdstation-forms/stable/rdstation-forms.min.js"></script>
+        <script type="text/javascript"> new RDStationForms('expositor-sebrae-73b0789e208066a96641', 'UA-72189437-19').createForm();</script>
+      </div>
+      <p style="margin-top:16px;font-size:13px;color:var(--gray-400);text-align:center">Dúvidas? <strong style="color:var(--purple-brand)"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="4a332b392723240a3929232f24292f3a262b3364292527">[email&#160;protected]</a></strong> · <strong style="color:var(--purple-brand)">+55 61 99450-2691</strong></p>
     </div>
   </div>
 </section>
@@ -475,9 +495,9 @@ section{padding:100px 0}
     </div>
     <div class="faq-grid reveal">
       <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><span>Quem pode participar desta chamada?</span><span class="arrow">▼</span></div><div class="faq-a"><div class="faq-a-inner">Micro e pequenas empresas (MPEs) registradas no Distrito Federal, com CNPJ ativo e que atuem em segmentos relacionados ao evento: nutrição, saúde, alimentos, suplementação, farmacêutico, serviços e tecnologia para saúde.</div></div></div>
-      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><span>O estande é realmente gratuito?</span><span class="arrow">▼</span></div><div class="faq-a"><div class="faq-a-inner">Sim. O SEBRAE/DF subsidia integralmente a locação dos estandes para as empresas selecionadas. A montagem básica (carpete, paredes, balcão, mesa, banquetas, iluminação e energia) está inclusa. A empresa é responsável apenas pela sua comunicação visual e materiais promocionais.</div></div></div>
+      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><span>Quanto custa participar?</span><span class="arrow">▼</span></div><div class="faq-a"><div class="faq-a-inner">O SEBRAE/DF subsidia 50% do valor do estande. A empresa selecionada paga a outra metade diretamente ao SEBRAE/DF. Os valores com subsídio são: 4m² por R$ 2.000, 9m² por R$ 4.500, 12m² por R$ 6.000 e 18m² por R$ 9.000. A montagem básica (carpete, paredes, balcão, mesa, banquetas, iluminação e energia) já está inclusa. A empresa fica responsável apenas pela sua comunicação visual e materiais promocionais.</div></div></div>
       <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><span>Quando e onde acontece o evento?</span><span class="arrow">▼</span></div><div class="faq-a"><div class="faq-a-inner">O Nutrição Brasil 2026 — Brasília acontece de 27 a 29 de agosto de 2026, no Centro de Convenções Ulysses, em Brasília/DF. A exposição funciona durante os 3 dias do congresso, com entrada aberta ao público.</div></div></div>
-      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><span>Quais tamanhos de estande estão disponíveis?</span><span class="arrow">▼</span></div><div class="faq-a"><div class="faq-a-inner">São 4 tamanhos: 4m² (2×2m) com 8 vagas, 9m² (3×3m) com 6 vagas, 12m² (3×4m) com 4 vagas e 18m² (3×6m) com 2 vagas. Total de 20 estandes e 170m² de área de exposição subsidiada.</div></div></div>
+      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><span>Quais tamanhos de estande estão disponíveis?</span><span class="arrow">▼</span></div><div class="faq-a"><div class="faq-a-inner">São 4 tamanhos: 4m² (2×2m) por R$ 2.000 com 8 vagas, 9m² (3×3m) por R$ 4.500 com 6 vagas, 12m² (3×4m) por R$ 6.000 com 4 vagas e 18m² (3×6m) por R$ 9.000 com 2 vagas. Total de 20 estandes. Todos os valores já com 50% de subsídio do SEBRAE/DF. Pagamento feito diretamente ao SEBRAE/DF.</div></div></div>
       <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><span>Qual o perfil do público que visita a exposição?</span><span class="arrow">▼</span></div><div class="faq-a"><div class="faq-a-inner">Nutricionistas (69,5%), médicos (7%), profissionais de educação física (3%) e estudantes (18%). Público predominantemente feminino (82%), concentração entre 25 e 44 anos — profissionais ativos com poder de prescrição e compra.</div></div></div>
       <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><span>O que está incluído na montagem básica?</span><span class="arrow">▼</span></div><div class="faq-a"><div class="faq-a-inner">Carpete Fademac 4mm grafite, parede de fundo em sistema octanorm (painéis TS brancos, alumínio anodizado, 2,20m de altura), 1 balcão padrão (1×1m) com prateleira interna, 1 mesa bistrô, 3 banquetas, iluminação com refletores LED e 1 ponto de energia 220V.</div></div></div>
       <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><span>Posso personalizar o estande?</span><span class="arrow">▼</span></div><div class="faq-a"><div class="faq-a-inner">Sim. A montagem estrutural é no formato padrão octanorm, mas você pode personalizar com adesivos, banners, displays e materiais promocionais próprios. Estruturas adicionais ficam por conta da empresa, mediante aprovação da organização.</div></div></div>
@@ -492,9 +512,9 @@ section{padding:100px 0}
 <section class="cta-section">
   <div class="container">
     <h2 class="reveal">Sua empresa merece estar<br>onde a <span>nutrição acontece</span>.</h2>
-    <p class="reveal">20 vagas. 10.000+ visitantes. 3 dias de exposição. Custo zero com apoio SEBRAE/DF.</p>
-    <a href="mailto:yasmin@scienceplay.com?subject=Interesse%20-%20Estande%20SEBRAE%20NB2026" class="btn-primary reveal">Quero meu estande →</a>
-    <p class="reveal" style="margin-top:16px;font-size:13px;color:rgba(255,255,255,.4)">yasmin@scienceplay.com · +55 61 99450-2691</p>
+    <p class="reveal">20 vagas. 10.000+ visitantes. 3 dias de exposição. Apoio institucional SEBRAE/DF.</p>
+    <a href="#formulario" class="btn-primary reveal">Quero meu estande →</a>
+    <p class="reveal" style="margin-top:16px;font-size:13px;color:rgba(255,255,255,.4)"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="9ae3fbe9f7f3f4dae9f9f3fff4f9ffeaf6fbe3b4f9f5f7">[email&#160;protected]</a> · +55 61 99450-2691</p>
   </div>
 </section>
 
@@ -506,13 +526,13 @@ section{padding:100px 0}
       <div class="sep"></div>
       <img src="https://email-editor-production.s3.amazonaws.com/images/222578/Science%20Play%20-%20Negativa.png" alt="Science Play">
       <div class="sep"></div>
-      <img src="https://contato.sebraesp.com.br/wp-content/uploads/logo-sebrae-branco.png" alt="SEBRAE" style="height:22px">
+      <img src="https://email-editor-production.s3.amazonaws.com/images/222578/Fotos%20Nutri%C3%A7%C3%A3o%20Brasil%20BSB/Logo%20Sebrae%20Branca.png" alt="SEBRAE" style="height:22px">
     </div>
     <p class="footer-text">Apoio Institucional: SEBRAE/DF · Contrato nº CT260019 · Processo nº CD2600103<br>Nutrição Brasil 2026 — 27 a 29 de Agosto · Centro de Convenções Ulysses · Brasília/DF</p>
   </div>
 </footer>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 function toggleFaq(el){
   const item=el.parentElement,a=item.querySelector('.faq-a'),open=item.classList.contains('open');
   document.querySelectorAll('.faq-item').forEach(i=>{i.classList.remove('open');i.querySelector('.faq-a').style.maxHeight='0'});
@@ -531,21 +551,4 @@ window.addEventListener('scroll',()=>{document.querySelector('.topbar').style.ba
 ║  Dentro de cada <div class="marquee-item">,       ║
 ║  substitua:                                       ║
 ║    <div class="photo-placeholder">...</div>       ║
-║  por:                                             ║
-║    <img src="URL_DA_FOTO" alt="Descrição">        ║
-║    <div class="overlay">                          ║
-║      <span>Legenda</span>                         ║
-║    </div>                                         ║
-║                                                   ║
-║  3 faixas de fotos:                               ║
-║  1. Expo & Congresso (8 slots) — scroll-left      ║
-║  2. Marcas & Estandes (7 slots) — scroll-right    ║
-║  3. Corrida & Experiência (6 slots) — scroll-left ║
-║                                                   ║
-║  LEMBRETE: cada slot aparece 2x (loop infinito).  ║
-║  Troque sempre o par.                             ║
-╚═══════════════════════════════════════════════════╝
--->
-
-</body>
-</html>
+║  por:                             
