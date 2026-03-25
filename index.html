@@ -4,6 +4,24 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Chamada Pública SEBRAE/DF — Nutrição Brasil 2026</title>
+
+<!-- Meta Pixel -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '460696430970324');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=460696430970324&ev=PageView&noscript=1"/></noscript>
+
+<!-- RD Station Monitoring -->
+<script type="text/javascript" async src="https://d335luupugsy2.cloudfront.net/js/loader-scripts/02414940-c939-4c7b-8397-f531c8640a72-loader.js"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 <style>
@@ -227,7 +245,22 @@ section{padding:100px 0}
 .footer-logos{display:flex;align-items:center;justify-content:center;gap:20px;margin-bottom:16px;flex-wrap:wrap}
 .footer-logos img{height:26px;opacity:.7;object-fit:contain}
 .footer-logos .sep{width:1px;height:22px;background:rgba(255,255,255,.15)}
+.footer-logos .sebrae-logo{height:auto;width:25%;max-width:280px;min-width:140px;opacity:.8}
 .footer-text{font-size:12px;color:rgba(255,255,255,.3);line-height:1.7}
+
+/* ── SEBRAE logo topbar ── */
+.topbar-logos .sebrae-logo{height:36px!important}
+
+/* ── WHATSAPP BUTTONS ── */
+.btn-whatsapp{display:inline-flex;align-items:center;gap:8px;background:#25D366;color:#fff;font-weight:600;font-size:13px;padding:10px 22px;border-radius:100px;text-decoration:none;transition:all .3s;border:none}
+.btn-whatsapp:hover{background:#1EBE5A;transform:translateY(-1px);box-shadow:0 6px 20px rgba(37,211,102,.3)}
+.btn-whatsapp-dark{display:inline-flex;align-items:center;gap:8px;background:rgba(37,211,102,.15);border:1px solid rgba(37,211,102,.3);color:#25D366;font-weight:600;font-size:13px;padding:10px 22px;border-radius:100px;text-decoration:none;transition:all .3s}
+.btn-whatsapp-dark:hover{background:rgba(37,211,102,.25);border-color:#25D366}
+
+/* ── FLOATING WHATSAPP ── */
+.whatsapp-float{position:fixed;bottom:24px;right:24px;z-index:99;width:56px;height:56px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(37,211,102,.4);transition:all .3s;text-decoration:none}
+.whatsapp-float:hover{transform:scale(1.1);box-shadow:0 6px 28px rgba(37,211,102,.5)}
+.whatsapp-float svg{width:28px;height:28px;fill:#fff}
 
 /* ── RESPONSIVE ── */
 @media(max-width:1024px){
@@ -264,7 +297,7 @@ section{padding:100px 0}
     <div class="topbar-logos">
       <img src="https://email-editor-production.s3.amazonaws.com/images/222578/nb_Logotipo_05.png" alt="Nutrição Brasil">
       <div class="sep"></div>
-      <img src="https://email-editor-production.s3.amazonaws.com/images/222578/Fotos%20Nutri%C3%A7%C3%A3o%20Brasil%20BSB/Logo%20Sebrae%20Branca.png" alt="SEBRAE" style="height:22px;">
+      <img src="https://email-editor-production.s3.amazonaws.com/images/222578/Fotos%20Nutri%C3%A7%C3%A3o%20Brasil%20BSB/Logo%20Sebrae%20Branca.png" alt="SEBRAE" class="sebrae-logo">
     </div>
     <a href="#formulario" class="topbar-cta">Quero participar →</a>
   </div>
@@ -481,7 +514,7 @@ section{padding:100px 0}
         <script type="text/javascript" src="https://d335luupugsy2.cloudfront.net/js/rdstation-forms/stable/rdstation-forms.min.js"></script>
         <script type="text/javascript"> new RDStationForms('expositor-sebrae-73b0789e208066a96641', 'UA-72189437-19').createForm();</script>
       </div>
-      <p style="margin-top:16px;font-size:13px;color:var(--gray-400);text-align:center">Dúvidas? <strong style="color:var(--purple-brand)"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="4a332b392723240a3929232f24292f3a262b3364292527">[email&#160;protected]</a></strong> · <strong style="color:var(--purple-brand)">+55 61 99450-2691</strong></p>
+      <p style="margin-top:16px;text-align:center"><a href="https://wa.me/5561994502691?text=Ol%C3%A1%2C%20tenho%20d%C3%BAvidas%20sobre%20os%20estandes%20SEBRAE%20no%20Nutri%C3%A7%C3%A3o%20Brasil%202026" target="_blank" class="btn-whatsapp">💬 Dúvidas? Fale pelo WhatsApp</a></p>
     </div>
   </div>
 </section>
@@ -514,25 +547,33 @@ section{padding:100px 0}
     <h2 class="reveal">Sua empresa merece estar<br>onde a <span>nutrição acontece</span>.</h2>
     <p class="reveal">20 vagas. 10.000+ visitantes. 3 dias de exposição. Apoio institucional SEBRAE/DF.</p>
     <a href="#formulario" class="btn-primary reveal">Quero meu estande →</a>
-    <p class="reveal" style="margin-top:16px;font-size:13px;color:rgba(255,255,255,.4)"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="9ae3fbe9f7f3f4dae9f9f3fff4f9ffeaf6fbe3b4f9f5f7">[email&#160;protected]</a> · +55 61 99450-2691</p>
+    <p class="reveal" style="margin-top:16px"><a href="https://wa.me/5561994502691?text=Ol%C3%A1%2C%20tenho%20d%C3%BAvidas%20sobre%20os%20estandes%20SEBRAE%20no%20Nutri%C3%A7%C3%A3o%20Brasil%202026" target="_blank" class="btn-whatsapp-dark">💬 Tire dúvidas pelo WhatsApp</a></p>
   </div>
 </section>
 
 <!-- FOOTER -->
 <footer class="footer">
   <div class="container">
+    <div style="margin-bottom:24px">
+      <p style="font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:rgba(255,255,255,.3);margin-bottom:12px">Apoio Institucional</p>
+      <img src="https://email-editor-production.s3.amazonaws.com/images/222578/Fotos%20Nutri%C3%A7%C3%A3o%20Brasil%20BSB/Logo%20Sebrae%20Branca.png" alt="SEBRAE/DF" class="sebrae-logo">
+    </div>
+    <div style="width:100%;height:1px;background:rgba(255,255,255,.06);margin-bottom:20px"></div>
     <div class="footer-logos">
       <img src="https://email-editor-production.s3.amazonaws.com/images/222578/nb_Logotipo_05.png" alt="Nutrição Brasil">
       <div class="sep"></div>
       <img src="https://email-editor-production.s3.amazonaws.com/images/222578/Science%20Play%20-%20Negativa.png" alt="Science Play">
-      <div class="sep"></div>
-      <img src="https://email-editor-production.s3.amazonaws.com/images/222578/Fotos%20Nutri%C3%A7%C3%A3o%20Brasil%20BSB/Logo%20Sebrae%20Branca.png" alt="SEBRAE" style="height:22px">
     </div>
-    <p class="footer-text">Apoio Institucional: SEBRAE/DF · Contrato nº CT260019 · Processo nº CD2600103<br>Nutrição Brasil 2026 — 27 a 29 de Agosto · Centro de Convenções Ulysses · Brasília/DF</p>
+    <p class="footer-text">Contrato nº CT260019 · Processo nº CD2600103<br>Nutrição Brasil 2026 — 27 a 29 de Agosto · Centro de Convenções Ulysses · Brasília/DF</p>
   </div>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<!-- Floating WhatsApp -->
+<a href="https://wa.me/5561994502691?text=Ol%C3%A1%2C%20tenho%20d%C3%BAvidas%20sobre%20os%20estandes%20SEBRAE%20no%20Nutri%C3%A7%C3%A3o%20Brasil%202026" target="_blank" class="whatsapp-float" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<script>
 function toggleFaq(el){
   const item=el.parentElement,a=item.querySelector('.faq-a'),open=item.classList.contains('open');
   document.querySelectorAll('.faq-item').forEach(i=>{i.classList.remove('open');i.querySelector('.faq-a').style.maxHeight='0'});
